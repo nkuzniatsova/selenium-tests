@@ -5,6 +5,7 @@
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/first-test.iml" filepath="$PROJECT_DIR$/.idea/modules/first-test.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/first-test_main.iml" filepath="$PROJECT_DIR$/.idea/modules/first-test_main.iml" group="first-test" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/first-test_test.iml" filepath="$PROJECT_DIR$/.idea/modules/first-test_test.iml" group="first-test" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/litecart-tests.iml" filepath="$PROJECT_DIR$/.idea/modules/litecart-tests.iml" group="litecart-tests" />
     </modules>
   </component>
 </project>
