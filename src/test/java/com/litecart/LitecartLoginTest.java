@@ -17,7 +17,7 @@ public class LitecartLoginTest {
 
     @Before
     public void start() {
-        setProperty("webdriver.chrome.driver", "C:\\Tools\\SeleniumWD\\chromedriver.exe");
+        //setProperty("webdriver.chrome.driver", "C:\\Tools\\SeleniumWD\\chromedriver.exe");
         driver = new ChromeDriver();
         wait = new WebDriverWait(driver, 10);
     }
