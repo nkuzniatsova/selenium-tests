@@ -27,13 +27,15 @@ public class VerifyProductSticker {
     public void verifySticker() {
         driver.navigate().to("http://localhost/litecart/");
 
-        List<WebElement> productsCollection = driver.findElements(By.xpath("//*[contains(@class,'box')]//a[contains(@class,'link')]"));
+        //List<WebElement> productsCollection = driver.findElements(By.xpath("//*[contains(@class,'box')]//a[contains(@class,'link')]"));
+        List<WebElement> productsCollection = driver.findElements(By.className("product"));
         int numberProducts = productsCollection.size();
+        //System.out.println(numberProducts);
 
         if (numberProducts > 0) {
 
             for (int i = 0; i < numberProducts; i++) {
-                int numberOfStickers = productsCollection.get(i).findElements(By.xpath(".//*[contains(@class, 'sticker sale')]")).size();
+                int numberOfStickers = productsCollection.get(i).findElements(By.xpath(".//*[contains(@class, 'sticker')]")).size();
                 if (numberOfStickers != 1) {
                     System.out.println("The following product has incorrect number of stickers other then 1: " + productsCollection.get(i).getText() + " number of stickers: " + numberOfStickers);
                 }
